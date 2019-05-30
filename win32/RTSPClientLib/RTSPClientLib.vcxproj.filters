@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{c568cc6c-d336-47ee-98b2-a6dc0e68c51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTCP">
+      <UniqueIdentifier>{5a936772-0357-4d7a-bcf9-7c834afaa0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTP">
+      <UniqueIdentifier>{62eb792f-ba46-459a-97de-ccd222625420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTSP">
+      <UniqueIdentifier>{ab8c8e4c-3286-4c3c-875c-8a05e5dabc90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sock">
+      <UniqueIdentifier>{06d98b76-5bc3-424a-8d5f-9817ea7d5f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{5fb4e040-3635-4926-bcec-84c98dbef650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS_Common">
+      <UniqueIdentifier>{b82dd8bc-7831-4ceb-aaa8-cae323c398a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\RTSPClient\Common\DigestAuthentication.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\RTSPCommon.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\BasicHashTable.cpp">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\HashTable.cpp">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\OutPacketBuffer.cpp">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\RTCP.cpp">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\rtcp_from_spec.c">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTCP\RTCPInstance.cpp">
+      <Filter>RTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\AC3RTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\H264RTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\JPEGRTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\RTPPacketBuffer.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\RTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTSP\MediaSession.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTSP\RTSPClient.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\MySock.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\SockCommon.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\TaskScheduler.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\Base64.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\our_md5.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\our_md5hl.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Event.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Mutex.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Thread.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\MySemaphore.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.cpp">
+      <Filter>RTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPClient\Common\BitVector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\RTSPClient\Common\DigestAuthentication.hh">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="..\..\RTSPClient\RTCP\BasicHashTable.hh">
+      <Filter>RTCP</Filter>
+    </None>
+    <None Include="..\..\RTSPClient\RTCP\HashTable.hh">
+      <Filter>RTCP</Filter>
+    </None>
+    <None Include="..\..\Util\Base64.hh">
+      <Filter>Util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\RTSPCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RTSPCommonEnv.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTCP\OutPacketBuffer.h">
+      <Filter>RTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTCP\RTCP.h">
+      <Filter>RTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTCP\rtcp_from_spec.h">
+      <Filter>RTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTCP\RTCPInstance.h">
+      <Filter>RTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\AC3RTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\H264RTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\JPEGRTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\RTPPacketBuffer.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\RTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTSP\MediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTSP\RTSPClient.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\MySock.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\SockCommon.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\TaskScheduler.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\our_md5.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Event.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Mutex.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\NetCommon.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Thread.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\MySemaphore.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.h">
+      <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPClient\Common\BitVector.hh">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

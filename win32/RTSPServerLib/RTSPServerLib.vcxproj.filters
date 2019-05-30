@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ebe5b75e-8a47-4788-b9cf-5b2ab0027380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{61b78d35-8643-4aee-b67e-58f1a737b0f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sock">
+      <UniqueIdentifier>{69793a84-22d3-484c-9c3a-3b378df3f32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTSP">
+      <UniqueIdentifier>{bdedba72-b46f-40d6-b2ea-d36fba1056bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS_Common">
+      <UniqueIdentifier>{c0b909b5-2ece-48d0-bb48-2c45cdc3e3db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\RTSPServer\Common\MyList.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\Common\NetAddress.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RTSPCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RTSPCommonEnv.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\our_md5.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\MySock.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\SockCommon.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\TaskScheduler.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\RTSP\ClientSocket.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\RTSP\RTSPServer.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\NetCommon.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\RTSPCommon.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\Base64.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\our_md5.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\our_md5hl.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\MySock.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\SockCommon.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sock\TaskScheduler.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPServer\RTSP\ClientSocket.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPServer\RTSP\RTSPServer.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTSPServer\RTSP\ServerMediaSession.cpp">
+      <Filter>RTSP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Util\Base64.hh">
+      <Filter>Util</Filter>
+    </None>
+  </ItemGroup>
+</Project>

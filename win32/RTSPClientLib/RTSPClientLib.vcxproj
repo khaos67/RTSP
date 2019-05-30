@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}</ProjectGuid>
+    <RootNamespace>RTSPClientLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\OS_Common\MySemaphore.cpp" />
+    <ClCompile Include="..\..\RTSPClient\Common\BitVector.cpp" />
+    <ClCompile Include="..\..\RTSPClient\Common\DigestAuthentication.cpp" />
+    <ClCompile Include="..\..\Common\RTSPCommon.cpp" />
+    <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\BasicHashTable.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\HashTable.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\OutPacketBuffer.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\RTCP.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\rtcp_from_spec.c" />
+    <ClCompile Include="..\..\RTSPClient\RTCP\RTCPInstance.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\AC3RTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\H264RTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\JPEGRTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\RTPPacketBuffer.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\RTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTSP\MediaSession.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTSP\RTSPClient.cpp" />
+    <ClCompile Include="..\..\Sock\MySock.cpp" />
+    <ClCompile Include="..\..\Sock\SockCommon.cpp" />
+    <ClCompile Include="..\..\Sock\TaskScheduler.cpp" />
+    <ClCompile Include="..\..\Util\Base64.cpp" />
+    <ClCompile Include="..\..\Util\our_md5.c" />
+    <ClCompile Include="..\..\Util\our_md5hl.c" />
+    <ClCompile Include="..\..\Util\util.cpp" />
+    <ClCompile Include="..\..\OS_Common\Event.cpp" />
+    <ClCompile Include="..\..\OS_Common\Mutex.cpp" />
+    <ClCompile Include="..\..\OS_Common\Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\RTSPClient\Common\DigestAuthentication.hh" />
+    <None Include="..\..\RTSPClient\RTCP\BasicHashTable.hh" />
+    <None Include="..\..\RTSPClient\RTCP\HashTable.hh" />
+    <None Include="..\..\Util\Base64.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\RTSPCommon.h" />
+    <ClInclude Include="..\..\Common\RTSPCommonEnv.h" />
+    <ClInclude Include="..\..\OS_Common\MySemaphore.h" />
+    <ClInclude Include="..\..\RTSPClient\Common\BitVector.hh" />
+    <ClInclude Include="..\..\RTSPClient\RTCP\OutPacketBuffer.h" />
+    <ClInclude Include="..\..\RTSPClient\RTCP\RTCP.h" />
+    <ClInclude Include="..\..\RTSPClient\RTCP\rtcp_from_spec.h" />
+    <ClInclude Include="..\..\RTSPClient\RTCP\RTCPInstance.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\AC3RTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\H264RTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\JPEGRTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\RTPPacketBuffer.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\RTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTSP\MediaSession.h" />
+    <ClInclude Include="..\..\RTSPClient\RTSP\RTSPClient.h" />
+    <ClInclude Include="..\..\Sock\MySock.h" />
+    <ClInclude Include="..\..\Sock\SockCommon.h" />
+    <ClInclude Include="..\..\Sock\TaskScheduler.h" />
+    <ClInclude Include="..\..\Util\our_md5.h" />
+    <ClInclude Include="..\..\Util\util.h" />
+    <ClInclude Include="..\..\OS_Common\Event.h" />
+    <ClInclude Include="..\..\OS_Common\Mutex.h" />
+    <ClInclude Include="..\..\OS_Common\NetCommon.h" />
+    <ClInclude Include="..\..\OS_Common\Thread.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
