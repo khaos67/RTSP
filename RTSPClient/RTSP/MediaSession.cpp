@@ -3,6 +3,7 @@
 #include "MediaSession.h"
 #include "util.h"
 #include "H264RTPSource.h"
+#include "H265RTPSource.h"
 #include "MPEG4ESRTPSource.h"
 #include "MPEG4GenericRTPSource.h"
 #include "JPEGRTPSource.h"
@@ -568,6 +569,8 @@ bool MediaSubsession::initiate(int streamType, TaskScheduler &task, bool rtpOnly
 		} else {
 			if (strcmp(fCodecName, "H264") == 0) {
 				fRTPSource = new H264RTPSource(streamType, *this, task);
+			} else if (strcmp(fCodecName, "H265") == 0) {
+				fRTPSource = new H265RTPSource(streamType, *this, task);
 			} else if (strcmp(fCodecName, "MP4V-ES") == 0) {
 				fRTPSource = new MPEG4ESRTPSource(streamType, *this, task);
 			} else if (strcmp(fCodecName, "MPEG4-GENERIC") == 0) {

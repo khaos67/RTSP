@@ -154,6 +154,7 @@
     <ClCompile Include="..\..\RTSPClient\RTCP\RTCPInstance.cpp" />
     <ClCompile Include="..\..\RTSPClient\RTP\AC3RTPSource.cpp" />
     <ClCompile Include="..\..\RTSPClient\RTP\H264RTPSource.cpp" />
+    <ClCompile Include="..\..\RTSPClient\RTP\H265RTPSource.cpp" />
     <ClCompile Include="..\..\RTSPClient\RTP\JPEGRTPSource.cpp" />
     <ClCompile Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.cpp" />
     <ClCompile Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="..\..\RTSPClient\RTCP\RTCPInstance.h" />
     <ClInclude Include="..\..\RTSPClient\RTP\AC3RTPSource.h" />
     <ClInclude Include="..\..\RTSPClient\RTP\H264RTPSource.h" />
+    <ClInclude Include="..\..\RTSPClient\RTP\H265RTPSource.h" />
     <ClInclude Include="..\..\RTSPClient\RTP\JPEGRTPSource.h" />
     <ClInclude Include="..\..\RTSPClient\RTP\MPEG4ESRTPSource.h" />
     <ClInclude Include="..\..\RTSPClient\RTP\MPEG4GenericRTPSource.h" />

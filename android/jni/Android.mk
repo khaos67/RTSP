@@ -66,6 +66,7 @@ RTCP_SRC_FILES	:= $(LOCAL_PATH)/../../RTSPClient/RTCP/HashTable.cpp \
 RTP_SRC_FILES	:= $(LOCAL_PATH)/../../RTSPClient/RTP/RTPPacketBuffer.cpp \
 				   $(LOCAL_PATH)/../../RTSPClient/RTP/RTPSource.cpp \
 				   $(LOCAL_PATH)/../../RTSPClient/RTP/H264RTPSource.cpp \
+				   $(LOCAL_PATH)/../../RTSPClient/RTP/H265RTPSource.cpp \
 				   $(LOCAL_PATH)/../../RTSPClient/RTP/MPEG4ESRTPSource.cpp \
 				   $(LOCAL_PATH)/../../RTSPClient/RTP/JPEGRTPSource.cpp \
 				   $(LOCAL_PATH)/../../RTSPClient/RTP/AC3RTPSource.cpp	\

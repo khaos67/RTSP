@@ -44,6 +44,7 @@ TARGET_RTSPCLIENT_RTCP = $(OBJ_DIR)/lib_rtspclient_rtcp.a
 
 RTSPCLIENT_RTP_OBJS =	$(OBJ_DIR)/AC3RTPSource.o \
 						$(OBJ_DIR)/H264RTPSource.o \
+						$(OBJ_DIR)/H265RTPSource.o \
 						$(OBJ_DIR)/JPEGRTPSource.o \
 						$(OBJ_DIR)/MPEG4ESRTPSource.o \
 						$(OBJ_DIR)/MPEG4GenericRTPSource.o \
@@ -191,6 +192,8 @@ $(OBJ_DIR)/AC3RTPSource.o : ./RTSPClient/RTP/AC3RTPSource.cpp
 	$(CXX) $(CXXFLAGS) -c ./RTSPClient/RTP/AC3RTPSource.cpp -o $(OBJ_DIR)/AC3RTPSource.o
 $(OBJ_DIR)/H264RTPSource.o : ./RTSPClient/RTP/H264RTPSource.cpp
 	$(CXX) $(CXXFLAGS) -c ./RTSPClient/RTP/H264RTPSource.cpp -o $(OBJ_DIR)/H264RTPSource.o
+$(OBJ_DIR)/H265RTPSource.o : ./RTSPClient/RTP/H265RTPSource.cpp
+	$(CXX) $(CXXFLAGS) -c ./RTSPClient/RTP/H265RTPSource.cpp -o $(OBJ_DIR)/H265RTPSource.o
 $(OBJ_DIR)/JPEGRTPSource.o : ./RTSPClient/RTP/JPEGRTPSource.cpp
 	$(CXX) $(CXXFLAGS) -c ./RTSPClient/RTP/JPEGRTPSource.cpp -o $(OBJ_DIR)/JPEGRTPSource.o	
 $(OBJ_DIR)/MPEG4ESRTPSource.o : ./RTSPClient/RTP/MPEG4ESRTPSource.cpp
