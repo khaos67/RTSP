@@ -772,7 +772,8 @@ char* RTSPClient::describeURL(const char *url, Authenticator* authenticator, boo
 						DPRINTF("Bad \"Content-length:\" header: \"%s\"\n", lineStart);
 						break;
 			  }
-			} else if (strncmp(lineStart, "Content-Base:", 13) == 0) {
+			} else if (strncmp(lineStart, "Content-Base:", 13) == 0
+				|| strncmp(lineStart, "Content-base:", 13) == 0) {
 				int cbIndex = 13;
 
 				while (lineStart[cbIndex] == ' ' || lineStart[cbIndex] == '\t') ++cbIndex;
